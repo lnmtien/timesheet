@@ -37,5 +37,8 @@ function()
     Route::get('/projects', 'ProjectController@index')->name('projects');
     Route::get('/projects/create', 'ProjectController@create')->name('projects.create');
     Route::post('/projects/create', 'ProjectController@store')->name('projects.store');
+    
+    Route::get('/jobs', 'JobController@index')->name('jobs');
+    Route::get('/jobs/create', 'JobController@create')->name('jobs.create');
+    Route::post('/jobs/create', 'JobController@store')->name('jobs.store');
 });
-

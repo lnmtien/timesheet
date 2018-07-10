@@ -26,3 +26,14 @@ Breadcrumbs::register('projects.create', function($breadcrumbs)
     $breadcrumbs->parent('projects');
     $breadcrumbs->push('Add New Project', route('projects.create'));
 });
+
+Breadcrumbs::register('jobs', function($breadcrumbs)
+{
+    $breadcrumbs->push('Job', route('jobs'));
+});
+
+Breadcrumbs::register('jobs.create', function($breadcrumbs)
+{
+    $breadcrumbs->parent('jobs');
+    $breadcrumbs->push('Add New Job', route('jobs.create'));
+});

@@ -72,6 +72,12 @@
                         <span class="m-menu__link-text">Users Manager</span>
                     </a>
                 </li>
+                <li class="m-menu__item " aria-haspopup="true" m-menu-link-redirect="1">
+                    <a href="{{ route('jobs') }}" class="m-menu__link ">
+                        <i class="m-menu__link-icon flaticon-tabs"></i>
+                        <span class="m-menu__link-text">Jobs Manager</span>
+                    </a>
+                </li>
             @endrole
 		</ul>
 	</div>
